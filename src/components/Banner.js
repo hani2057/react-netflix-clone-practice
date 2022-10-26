@@ -15,7 +15,7 @@ const Banner = () => {
   // 현재 상영중인 영화 목록 가져오기
   const fetchData = async () => {
     const request = await axios.get(requests.fetchNowPlaying);
-    console.log(request);
+    // console.log(request);
 
     // 현재 상영중인 영화 목록 중 랜덤으로 하나의 영화 id 고르기
     const movieId =
@@ -34,7 +34,7 @@ const Banner = () => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   };
 
-  console.log("movie", movie);
+  // console.log("movie", movie);
   if (!isPlayClicked) {
     return (
       <header
