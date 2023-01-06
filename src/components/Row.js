@@ -48,6 +48,7 @@ const Row = ({ title, id, fetchURL, isLargeRow }) => {
                 isLargeRow ? movie.poster_path : movie.backdrop_path
               }`}
               alt={movie.name}
+              onClick={() => handleClick(movie)}
             />
           ))}
         </div>
